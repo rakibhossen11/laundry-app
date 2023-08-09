@@ -2,8 +2,11 @@ import { Feather, MaterialIcons } from "@expo/vector-icons";
 import { Image, Pressable, ScrollView, Text, TextInput, View } from "react-native";
 import Carosel from "../components/Carosel";
 import Services from "../components/Services";
+import DressItem from "../components/DressItem";
+import { useNavigation } from "@react-navigation/native";
 
 export default function HomeScreen(){
+    const navigation  = useNavigation();
     return(
         <>
             <ScrollView>
@@ -15,7 +18,7 @@ export default function HomeScreen(){
                         <Text>Hobirbari bhaluka mymensingh</Text>
                     </View>
                     {/* TO DO onpress fuunction */}
-                    <Pressable style={{marginLeft: "auto", marginRight: 7}}>
+                    <Pressable onPress={() => navigation.navigate("Profile")} style={{marginLeft: "auto", marginRight: 7}}>
                         <Image
                             style={{width: 40, height: 40, borderRadius: 20}}
                             source={{uri: "https://lh3.googleusercontent.com/ogw/AAEL6sh_yqHq38z35QMy5Fnb8ZIxicdxCIVM9PeBD2j-=s64-c-mo"}}
@@ -44,6 +47,7 @@ export default function HomeScreen(){
                 {/* services component */}
                 <Services />
                 {/* Render all the products */}
+                <DressItem />
             </ScrollView>
         </>
     )
