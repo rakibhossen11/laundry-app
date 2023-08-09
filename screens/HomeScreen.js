@@ -1,6 +1,7 @@
 import { Feather, MaterialIcons } from "@expo/vector-icons";
 import { Image, Pressable, ScrollView, Text, TextInput, View } from "react-native";
 import Carosel from "../components/Carosel";
+import Services from "../components/Services";
 
 export default function HomeScreen(){
     return(
@@ -41,6 +42,8 @@ export default function HomeScreen(){
                 {/* Image carosel */}
                 <Carosel />
                 {/* services component */}
+                <Services />
+                {/* Render all the products */}
             </ScrollView>
         </>
     )
