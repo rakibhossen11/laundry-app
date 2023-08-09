@@ -1,5 +1,5 @@
-import { MaterialIcons } from "@expo/vector-icons";
-import { Image, Pressable, ScrollView, Text, View } from "react-native";
+import { Feather, MaterialIcons } from "@expo/vector-icons";
+import { Image, Pressable, ScrollView, Text, TextInput, View } from "react-native";
 
 export default function HomeScreen(){
     return(
@@ -19,6 +19,23 @@ export default function HomeScreen(){
                             source={{uri: "https://lh3.googleusercontent.com/ogw/AAEL6sh_yqHq38z35QMy5Fnb8ZIxicdxCIVM9PeBD2j-=s64-c-mo"}}
                         />
                     </Pressable>
+                </View>
+
+                {/* Search bar */}
+                <View
+                style={{
+                    padding: 10,
+                    margin: 10,
+                    flexDirection: "row",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                    borderWidth: 0.8,
+                    borderColor: "#C0C0C0",
+                    borderRadius: 7,
+                }}
+                >
+                    <TextInput placeholder="search for item or more"/>
+                    <Feather name="search" size={24} color={"#fd5c63"}/>
                 </View>
             </ScrollView>
         </>
