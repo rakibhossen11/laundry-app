@@ -1,5 +1,6 @@
 import { Feather, MaterialIcons } from "@expo/vector-icons";
 import { Image, Pressable, ScrollView, Text, TextInput, View } from "react-native";
+import Carosel from "../components/Carosel";
 
 export default function HomeScreen(){
     return(
@@ -37,6 +38,9 @@ export default function HomeScreen(){
                     <TextInput placeholder="search for item or more"/>
                     <Feather name="search" size={24} color={"#fd5c63"}/>
                 </View>
+                {/* Image carosel */}
+                <Carosel />
+                {/* services component */}
             </ScrollView>
         </>
     )
