@@ -11,6 +11,7 @@ export default function App() {
       // </View>
       <NavigationContainer>
         <StackNavigation />
+        <StatusBar backgroundColor='black' />
       </NavigationContainer>
   );
 }
