@@ -7,6 +7,7 @@ import ProfileScreen from "../screens/ProfileScreen";
 import LoginScreen from "../screens/LoginScreen";
 import RegisterScreen from "../screens/RegisterScreen";
 import OrderScreen from "../screens/OrderScreen";
+import PickupScreen from "../screens/PickupScreen";
 
 const StackNavigation = () => {
   const Stack = createNativeStackNavigator();
@@ -20,6 +21,7 @@ const StackNavigation = () => {
             <Stack.Screen name="Login" component={LoginScreen} options={{headerShown: false}} />
             <Stack.Screen name="Register" component={RegisterScreen} options={{headerShown: false}} />
             <Stack.Screen name="Order" component={OrderScreen} options={{headerShown: false}} />
+            <Stack.Screen name="Pickup" component={PickupScreen} options={{headerShown: false}} />
         </Stack.Navigator>
     </NavigationContainer>
   );
