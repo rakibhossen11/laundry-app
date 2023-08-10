@@ -12,7 +12,7 @@ const StackNavigation = () => {
   const Stack = createNativeStackNavigator();
 
   return (
-    // <NavigationContainer>
+    <NavigationContainer>
         <Stack.Navigator>
             <Stack.Screen name="Home" component={HomeScreen} options={{headerShown: false}} />
             <Stack.Screen name="Cart" component={CartScreen}  options={{headerShown: false}} />
@@ -21,7 +21,7 @@ const StackNavigation = () => {
             <Stack.Screen name="Register" component={RegisterScreen} options={{headerShown: false}} />
             <Stack.Screen name="Order" component={OrderScreen} options={{headerShown: false}} />
         </Stack.Navigator>
-    // </NavigationContainer>
+    </NavigationContainer>
   );
 };
 
